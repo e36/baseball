@@ -2,8 +2,7 @@ class Inning:
 
     def __init__(self):
 
-        self.home_actions = []
-        self.away_actions = []
+        self.actions = []
         self.text_log = []
 
         # outs
@@ -20,3 +19,5 @@ class Inning:
         # errors
         self.home_errors: int = 0
         self.away_errors: int = 0
+
+

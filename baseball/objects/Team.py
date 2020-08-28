@@ -1,3 +1,6 @@
+from baseball.objects.LineUp import LineUp
+
+
 class Team:
 
     def __init__(self, name: str, abbreviation: str, year: int):
@@ -10,3 +13,6 @@ class Team:
         # example: {uuid: Player}
         self.pitchers = []
         self.batters = []
+
+        # lineup
+        self.lineup: LineUp = None

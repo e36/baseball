@@ -1,5 +1,6 @@
 from baseball.objects.Team import Team
-from baseball.objects.Inning import Inning
+from baseball.game.Inning import Inning
+from baseball.enums.GameStateEnum import GameStateEnum
 from typing import Dict
 
 
@@ -11,7 +12,7 @@ class Game:
         self.current_inning: int = 0
 
         # we can use this for a while game_active to keep the game going
-        self.game_active = False
+        self.game_state: GameStateEnum = GameStateEnum.NOT_STARTED
 
         # scoring
         self.home_runs = 0
@@ -34,7 +35,7 @@ class Game:
 
     def start(self):
 
-        self.game_active = True
+        self.game_state = GameStateEnum.GAME_STARTED
 
         print("Play Ball!")
 
@@ -51,4 +52,3 @@ class Game:
 
         inning: Inning = self.get_current_inning()
 
-        
