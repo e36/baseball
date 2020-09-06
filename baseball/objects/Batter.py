@@ -22,3 +22,8 @@ class Batter(Player):
         self.triples: int = 0
         self.homeruns: int = 0
 
+    @classmethod
+    def from_json(cls, data):
+        return cls(**data)
+
+

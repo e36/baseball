@@ -1,4 +1,6 @@
 from baseball.objects.LineUp import LineUp
+from baseball.objects.Player import Player
+from typing import Dict, List
 
 
 class Team:
@@ -11,8 +13,13 @@ class Team:
 
         # should these be dicts instead?
         # example: {uuid: Player}
-        self.pitchers = []
-        self.batters = []
+        self.players: Dict[int, Player] = []
+
+        # these lists will keep track of which users are pitchers and batters
+        # we'll store the player id here
+        self.pitchers: List[int] = []
+        self.batters: List[int] = []
 
         # lineup
         self.lineup: LineUp = None
+

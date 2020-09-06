@@ -20,4 +20,9 @@ def write_team(filename: str, team: Team):
         'players': []
     }
 
-    
+    # loop through
+    for pitcher in team.pitchers:
+        pass
+
+    for batter in team.batters:
+        pass
