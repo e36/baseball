@@ -1,4 +1,5 @@
 from typing import Dict
+from baseball.enums.PlayerPositionEnum import PlayerPositionEnum
 """
 Stores game constants
 """
@@ -16,7 +17,7 @@ FIELD_POSITIONS: Dict[int, str] = {
     10: 'Designated hitter'
 }
 
-FIELD_POSITIONS_ABBREVIATE: Dict[int, str] = {
+FIELD_POSITIONS_ABBREVIATED: Dict[int, str] = {
     1: 'P',
     2: 'C',
     3: '1B',
@@ -28,3 +29,17 @@ FIELD_POSITIONS_ABBREVIATE: Dict[int, str] = {
     9: 'RF',
     10: 'DH'
 }
+
+FIELD_POSITIONS_PLAYERPOSITIONENUM: Dict[str, PlayerPositionEnum] = {
+    'P': PlayerPositionEnum.Pitcher,
+    'C': PlayerPositionEnum.Catcher,
+    '1B': PlayerPositionEnum.FirstBase,
+    '2B': PlayerPositionEnum.SecondBase,
+    '3B': PlayerPositionEnum.ThirdBase,
+    'SS': PlayerPositionEnum.ShortStop,
+    'LF': PlayerPositionEnum.LeftField,
+    'CF': PlayerPositionEnum.CenterField,
+    'RF': PlayerPositionEnum.RightField,
+    'DH': PlayerPositionEnum.DesignatedHitter
+}
+

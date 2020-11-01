@@ -3,6 +3,7 @@ from enum import Enum
 
 class GameStateEnum(Enum):
 
-    NOT_STARTED = 0
-    GAME_STARTED = 1
-    GAME_OVER = 2
+    NOT_STARTED = 'Not Started'
+    GAME_STARTED = 'Game Started'
+    GAME_OVER = 'Game Over'
+

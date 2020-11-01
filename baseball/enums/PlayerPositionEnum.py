@@ -13,3 +13,4 @@ class PlayerPositionEnum(Enum):
     CenterField = 8
     RightField = 9
     DesignatedHitter = 10
+    Null = 99

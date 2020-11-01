@@ -3,22 +3,28 @@ from enum import Enum
 
 class PlayerActionEnum(Enum):
 
-    HOMERUN = 'homerun'
-    SINGLE = 'single'
-    DOUBLE = 'double'
-    TRIPLE = 'triple'
+    HOMERUN = 'HOMERUN'
+    SINGLE = 'SINGLE'
+    DOUBLE = 'DOUBLE'
+    TRIPLE = 'TRIPLE'
 
-    FLYBALLA = 'flyball'
-    FLYBALLB = 'flyball'
-    FLYBALLC = 'flyball'
-    FLYBALLX = 'flyball'
+    FLYBALL = 'FLYBALL'
+    # FLYBALLB = 'FLYBALL'
+    # FLYBALLC = 'FLYBALL'
+    # FLYBALLX = 'FLYBALL'
 
-    GROUNDBALLA = 'groundball'
-    GROUNDBALLB = 'groundball'
-    GROUNDBALLC = 'groundball'
-    GROUNDBALLX = 'groundball'
+    GROUNDBALL = 'GROUNDBALL'
+    # GROUNDBALL = 'GROUND-BALL'
+    # GROUNDBALLC = 'GROUNDBALL'
+    # GROUNDBALLX = 'GROUNDBALL'
 
-    LINEOUT = 'lineout'
-    WALK = 'walk'
-    STRIKEOUT = 'strikeout'
-    CATCHER_CARD = 'catchercard'
+    POPOUT = 'POPOUT'
+
+    FOULOUT = 'FOULOUT'
+
+    LINEOUT = 'LINEOUT'
+    WALK = 'WALK'
+    STRIKEOUT = 'STRIKEOUT'
+    CATCHER_CARD = "CATCHER'S CARD"
+
+    NULL = 'NULL'
